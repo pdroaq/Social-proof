@@ -1,0 +1,245 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+--very-dark-magenta: hsl(300, 43%, 22%);
+--soft-pink: hsl(333, 80%, 67%);
+
+### Neutral
+
+--dark-grayish-magenta: hsl(303, 10%, 53%);
+--light-grayish-magenta: hsl(300, 24%, 96%);
+--white: hsl(0, 0%, 100%);
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 400, 500, 700
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+/*  Colors
+    Primary*/
+--very-dark-magenta: hsl(300, 43%, 22%);
+--soft-pink: hsl(333, 80%, 67%);
+/* Neutral */
+--dark-grayish-magenta: hsl(303, 10%, 53%);
+--light-grayish-magenta: hsl(300, 24%, 96%);
+--white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 15px;
+
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%, 50%;
+    background-position: top left, bottom right;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+.card {
+    background-color: none;
+    max-width: 1450px;
+    margin: 0 ;
+}
+
+.conteudo{
+    background-color: none;
+    display: flex;
+    justify-content:start ;
+}
+
+.lead {
+    padding: 50px;
+}
+
+.lead h1 {
+    font-size: 65px;
+    color: var(--very-dark-magenta);
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.lead p {
+    padding-right: 100px;
+    color:var(--dark-grayish-magenta);
+    max-width: 700px;
+    line-height: 1.4;
+    font-size: 25px;
+}
+
+.stars {
+    background-color:none;
+    padding: 50PX;
+    margin-top: 30px;
+}
+
+.users{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.users img {
+    border-radius: 50%;
+    width: 45px;
+    margin-bottom: 25px;
+    margin-right: 17px;
+    
+}
+
+.users p {
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.users span {
+    color: var(--soft-pink);
+}
+
+.nome-cima {
+    margin-bottom: 25px;
+}
+
+.nome-cima p {
+    line-height: 1;
+}
+
+.pictures {
+    display: flex;
+    align-items: center;
+}
+
+.user-1 {
+    background-color: hsl(300, 43%, 22%);
+    margin-right: 50px;
+    padding: 45px;
+    border-radius: 15px;
+}
+
+.user-2 {
+    background-color: hsl(300, 43%, 22%);
+    margin-right: 50px;
+    padding: 45px;
+    border-radius: 15px;
+    margin-top: 55px;
+}
+
+.user-3 {
+    background-color: hsl(300, 43%, 22%);
+    margin-right: 30px;
+    padding: 45px;
+    border-radius: 15px;
+    margin-top: 125px;
+}
+
+.user-3 span {
+    color: var(--soft-pink);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--dark-grayish-magenta);
+    
+}
+.attribution a {
+    color: var(--very-dark-magenta);
+}
+
+
+
+
+#star-1{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+    font-size: 18px;
+    background-color: #F7F2F8;
+    padding-left: 30px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    margin-left: -60px;
+}
+
+#star-1 p{
+    margin-left: 25px;
+}
+
+#star-2{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+    font-size: 18px;
+    background-color: #F7F2F8;
+    padding-left: 30px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+
+}
+
+#star-2 p{
+    margin-left: 25px;
+}
+
+#star-3{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+    font-size: 18px;
+    background-color: #F7F2F8;
+    padding-left: 30px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+
+}
+
+#star-3 p{
+    margin-left: 25px;
+}
